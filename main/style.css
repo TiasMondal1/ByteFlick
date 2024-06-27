@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES+Deco:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    /* background-image: url(../Images/1.png); */
+    /* background-size: cover; */
+
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: black;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+
+}
+
+.nav ul {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+}
+
+.nav ul li a {
+    text-decoration: none;
+
+}
+
+.text{
+    width: 100%;
+    height: 100vh;
+
+}
+

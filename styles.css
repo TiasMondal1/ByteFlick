@@ -1,0 +1,52 @@
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1100px; /* Adjust this value as needed */
+}
+
+.navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.social-link {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    footer .social-link {
+        margin-bottom: 10px;
+    }
+}
