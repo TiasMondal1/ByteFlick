@@ -55,6 +55,22 @@ header {
     background: #912929;
 }
 
+.home{
+    background: #912929;
+}
+.about{
+    background: #d36464;
+}
+.services{
+    background: #2a7a5c;
+}
+.portfolio{
+    background: #4d2991;
+}
+.contact{
+    background: #cc23cc;
+}
+
 .footer {
     background-color: #333;
     color: white;
