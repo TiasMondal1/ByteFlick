@@ -9,7 +9,9 @@ header {
     display: flex;
     justify-content: space-around;
     position: sticky;
+    top: 0;
     background-color: rgb(50, 134, 207);
+    z-index: 1000;
 }
 
 .logo {
@@ -20,6 +22,7 @@ header {
 .logo a {
     text-decoration: none;
     font-size: larger;
+    color: black; /* Added a default color for the logo link */
 }
 
 .logo a:hover {
@@ -33,18 +36,17 @@ header {
 
 .nav ul {
     display: flex;
-    text-decoration: none;
+    list-style: none;
 }
 
 .nav ul li {
-    list-style-type: none;
-    text-decoration: none;
     padding: 20px 26px;
     font-size: 1.4rem;
 }
 
 .nav ul li a {
     text-decoration: none;
+    color: black; /* Added a default color for the nav links */
 }
 
 .nav ul li a:hover {
@@ -55,20 +57,34 @@ header {
     background: #912929;
 }
 
-.home{
+.home {
     background: #912929;
+    padding: 20px; /* Added padding for content spacing */
+    color: white; /* Ensuring text is readable on the background */
 }
-.about{
+
+.about {
     background: #d36464;
+    padding: 20px;
+    color: white;
 }
-.services{
+
+.services {
     background: #2a7a5c;
+    padding: 20px;
+    color: white;
 }
-.portfolio{
+
+.portfolio {
     background: #4d2991;
+    padding: 20px;
+    color: white;
 }
-.contact{
+
+.contact {
     background: #cc23cc;
+    padding: 20px;
+    color: white;
 }
 
 .footer {
@@ -83,11 +99,12 @@ header {
     margin: 0 auto;
 }
 
-.footer .footer-content p{
+.footer .footer-content p {
     padding: 20px;
 }
+
 .footer .social-links {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -105,11 +122,25 @@ header {
 }
 
 /* Default Colors for Each Social Media */
-.footer .social-links a.facebook { color: #3b5998; }
-.footer .social-links a.twitter { color: #1da1f2; }
-.footer .social-links a.instagram { color: #e4405f; }
-.footer .social-links a.linkedin { color: #0077b5; }
-.footer .social-links a.youtube { color: #ff0000; }
+.footer .social-links a.facebook {
+    color: #3b5998;
+}
+
+.footer .social-links a.twitter {
+    color: #1da1f2;
+}
+
+.footer .social-links a.instagram {
+    color: #e4405f;
+}
+
+.footer .social-links a.linkedin {
+    color: #0077b5;
+}
+
+.footer .social-links a.youtube {
+    color: #ff0000;
+}
 
 /* Hover Effect */
 .footer .social-links a:hover {
