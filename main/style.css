@@ -22,7 +22,8 @@ header {
 .logo a {
     text-decoration: none;
     font-size: larger;
-    color: black; /* Added a default color for the logo link */
+    color: black;
+    /* Added a default color for the logo link */
 }
 
 .logo a:hover {
@@ -46,7 +47,8 @@ header {
 
 .nav ul li a {
     text-decoration: none;
-    color: black; /* Added a default color for the nav links */
+    color: black;
+    /* Added a default color for the nav links */
 }
 
 .nav ul li a:hover {
@@ -59,8 +61,15 @@ header {
 
 .home {
     background: #912929;
-    padding: 20px; /* Added padding for content spacing */
-    color: white; /* Ensuring text is readable on the background */
+    padding: 50px 250px;   /* Added padding for content spacing */
+    color: white;  /* Ensuring text is readable on the background */
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_right img{
+    width: 100%;
+    height: auto;
 }
 
 .about {
