@@ -9,26 +9,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES+Deco:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="#home"><h2>ByteFlick</h2></a>
+        <a href="#home"><h2>BF</h2></a>
       </div>
       <div class="nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
+      <div class="profile">
+        <i class="fa-solid fa-user fa-2xl" style="color: #879dc5;"></i>&nbsp; <h3>Profile</h3>
+      </div>
     </header>
+
     <div class="main">
       <div id="home" class="home">
         <div class="home_left">
-          <img src="Images/1.jpg" alt="home_image" />
+          <img src="/Images/1.png" alt="home_image" />
         </div>
         <div class="home_right">
           <p>Hi Everyone!</p>
@@ -53,44 +58,38 @@
       <div id="services" class="services">
         <h2>This is services page</h2>
       </div>
-      <div id="portfolio" class="portfolio">
-        <h2>This is portfolio page</h2>
-      </div>
+
       <div id="contact" class="contact">
-        <h2>This is contact page</h2>
+        <div class="our_details">
+          <h2>Feel Free to Contact Here 😊</h2>
+          <p><strong>Phone:</strong>+91 1234567890 </p>
+          <p><strong>Email:</strong>byteflick@gmail.com </p>
+          <p><strong>Address:</strong>Kolkata, West Bengal </p>
+        </div>
+        <div class="contact_form">
+          <h2>Contact Us here!</h2>
+          <form action="" method="get">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="mail">Email:</label>
+            <input type="text" name="mail" id="mail" required>
+            <label for="msg">Message</label>
+            <input type="text" name="msg" id="msg" required>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
+
     <footer class="footer">
       <div class="footer-content">
         <p>Follow us on:</p>
         <ul class="social-links">
-          <li>
-            <a href="https://www.facebook.com" target="_blank" class="facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" target="_blank" class="twitter"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              class="instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com" target="_blank" class="linkedin"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com" target="_blank" class="youtube">
-              <i class="fab fa-youtube"></i></a>
-          </li>
+          <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com"target="_blank"class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
         </ul>
       </div>
     </footer>
@@ -100,5 +99,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script src="server.js"></script>
   </body>
 </html>

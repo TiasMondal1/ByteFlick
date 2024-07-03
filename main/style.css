@@ -7,7 +7,7 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: sticky;
     top: 0;
     background-color: rgb(50, 134, 207);
@@ -16,12 +16,13 @@ header {
 
 .logo {
     margin: 30px;
+    padding: 0 25px;
     position: relative;
 }
 
 .logo a {
     text-decoration: none;
-    font-size: larger;
+    font-size: 2rem;
     color: black;
     /* Added a default color for the logo link */
 }
@@ -41,7 +42,7 @@ header {
 }
 
 .nav ul li {
-    padding: 20px 26px;
+    padding: 25px 30px;
     font-size: 1.4rem;
 }
 
@@ -55,20 +56,31 @@ header {
     color: #98ce42;
 }
 
+.profile {
+    padding: 40px;
+    display: flex;
+}
+
+.profile h3 {
+    cursor: pointer;
+    padding: 5px 6px;
+}
+
 .main {
     background: #912929;
 }
 
 .home {
     background: #912929;
-    padding: 50px 250px;   /* Added padding for content spacing */
-    color: white;  /* Ensuring text is readable on the background */
+    padding: 50px 250px;
+    color: white;
+    /* Ensuring text is readable on the background */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.home_right img{
-    width: 100%;
+.home_left img {
+    width: 50%;
     height: auto;
 }
 
@@ -84,17 +96,16 @@ header {
     color: white;
 }
 
-.portfolio {
-    background: #4d2991;
-    padding: 20px;
-    color: white;
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    /* border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
-.contact {
-    background: #cc23cc;
-    padding: 20px;
-    color: white;
-}
+
 
 .footer {
     background-color: #333;

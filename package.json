@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14",
     "tailwindcss": "^1.9.6"
   }
 }
