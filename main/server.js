@@ -1,9 +1,12 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const cors = require('cors');
+require('dotenv').config(); // Ensure you have a .env file with your email credentials
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors()); // Enable CORS for all routes
 
 app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
@@ -12,15 +15,15 @@ app.post('/contact', (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'Gmail', // You can use any email service
         auth: {
-            user: 'your-email@gmail.com',
-            pass: 'your-email-password'
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     });
 
     // Setup email data
     let mailOptions = {
         from: email,
-        to: 'your-email@gmail.com',
+        to: process.env.EMAIL_USER,
         subject: 'Contact Us Form Submission',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };

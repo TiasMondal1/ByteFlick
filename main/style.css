@@ -3,11 +3,19 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
 }
 
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
     position: sticky;
     top: 0;
     background-color: rgb(50, 134, 207);
@@ -15,16 +23,13 @@ header {
 }
 
 .logo {
-    margin: 30px;
-    padding: 0 25px;
-    position: relative;
+    margin: 20px 0;
 }
 
 .logo a {
     text-decoration: none;
     font-size: 2rem;
     color: black;
-    /* Added a default color for the logo link */
 }
 
 .logo a:hover {
@@ -33,7 +38,7 @@ header {
 
 .nav {
     display: flex;
-    margin: 16px;
+    align-items: center;
 }
 
 .nav ul {
@@ -49,7 +54,6 @@ header {
 .nav ul li a {
     text-decoration: none;
     color: black;
-    /* Added a default color for the nav links */
 }
 
 .nav ul li a:hover {
@@ -57,55 +61,93 @@ header {
 }
 
 .profile {
-    padding: 40px;
     display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
 .profile h3 {
     cursor: pointer;
-    padding: 5px 6px;
+    padding-left: 10px;
+    margin: 0;
 }
 
 .main {
     background: #912929;
-}
-
-.home {
-    background: #912929;
-    padding: 50px 250px;
     color: white;
     /* Ensuring text is readable on the background */
+}
+
+.home, .about, .services, .contact {
+    padding: 50px 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.home_left img {
-    width: 50%;
+.home_left img, .about_left img, .services_left img, .contact_left img {
+    width: 100%;
+    max-width: 600px;
     height: auto;
+}
+
+.about, .services, .contact {
+    background: #d36464;
+    color: white;
 }
 
 .about {
     background: #d36464;
-    padding: 20px;
-    color: white;
 }
 
 .services {
     background: #2a7a5c;
-    padding: 20px;
-    color: white;
 }
 
 .contact {
+    background: #1a1a1a;
+    color: white;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 30px;
-    /* border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
+.contact .our_details{
+    padding: 100px 0;
+}
+.contact .our_details, .contact .contact_form {
+    width: 100%;
+    max-width: 600px;
+}
 
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 10px;
+}
+
+.contact form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
 
 .footer {
     background-color: #333;
@@ -141,7 +183,6 @@ header {
     transition: transform 0.3s ease;
 }
 
-/* Default Colors for Each Social Media */
 .footer .social-links a.facebook {
     color: #3b5998;
 }
@@ -162,7 +203,6 @@ header {
     color: #ff0000;
 }
 
-/* Hover Effect */
 .footer .social-links a:hover {
     transform: scale(1.1);
 }
