@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
@@ -16,9 +13,10 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 0 20px;
-    position: sticky;
     top: 0;
-    background-color: rgb(50, 134, 207);
+    /* position: sticky; */
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
     z-index: 1000;
 }
 
@@ -92,7 +90,6 @@ header {
 }
 
 .about, .services, .contact {
-    background: #d36464;
     color: white;
 }
 
@@ -100,8 +97,54 @@ header {
     background: #d36464;
 }
 
-.services {
-    background: #2a7a5c;
+.services{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
 }
 
 .contact {
@@ -113,6 +156,7 @@ header {
 
 .contact .our_details{
     padding: 100px 0;
+    font-size: larger;
 }
 .contact .our_details, .contact .contact_form {
     width: 100%;
