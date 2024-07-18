@@ -27,16 +27,18 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         },
         body: JSON.stringify(formData)
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        alert('Your message has been sent successfully!');
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        alert('There was an error sending your message.');
-    });
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Your message has been sent successfully!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('There was an error sending your message.');
+        });
 
     // Reset form
     document.getElementById('contactForm').reset();
 });
+
+document.documentElement.style.setProperty('--app-color', '#3498db'); // Change this color to your app's default color

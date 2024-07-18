@@ -1,130 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ByteFlick</title>
-    <meta name="description" content="ByteFlick - Freelance web development, photo & video editing, SEO management, and data analysis services by professionals working in renowned MNCs.">
-    <link rel="icon" type="image/x-icon" href="/Images/1.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+ES+Deco:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a href="#home"><h2>BF</h2></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteFlick</title>
+  <meta name="description"
+    content="ByteFlick - Freelance web development, photo & video editing, SEO management, and data analysis services by professionals working in renowned MNCs." />
+  <link rel="icon" type="image/x-icon" href="/Images/6.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#home">
+        <!-- <h2>BF</h2> -->
+        <img src="/Images/6.png" alt="">
+      </a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main">
+
+    <section id="home" class="home">
+      <div class="home_left">
+        <img src="/Images/home_img.jpeg" alt="home_image" />
       </div>
-      <div class="nav">
+      <div class="home_right">
+        <p>Hi Everyone!</p>
+        <h2>We are mainly developers working for renowned MNCs</h2>
+        <h2>Started freelancing in the free time</h2>
+      </div>
+    </section>
+
+    <!-- <section id="about" class="about">
+      <h2>About Us</h2>
+      <div class="about_left">
+        <h3>We mainly deal with:</h3>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li>Web Development</li>
+          <li>Photo & Video Editing</li>
+          <li>SEO Management</li>
+          <li>Data Analysis</li>
         </ul>
       </div>
-      <div class="profile">
-        <i class="fa-solid fa-user fa-2xl" style="color: #879dc5;"></i>&nbsp; <h3>Profile</h3>
+      <div class="about_right">
+        <img src="/Images/About.jpg" alt="about_image" />
       </div>
-    </header>
+    </section> -->
 
-    <div class="main">
-      <div id="home" class="home">
-        <div class="home_left">
-          <img src="/Images/5.png" alt="home_image" />
+    <div class="about-section" id="about">
+      <h1>About Us</h1>
+
+      <!-- <h2>Who We Are</h2>
+      <p>Welcome to ByteFlick, a dedicated team of passionate freelancers specializing in delivering
+        high-quality services in web development, frontend development, data analysis, database management, editing, and
+        photography. Our mission is to help businesses and individuals achieve their goals by providing tailored
+        solutions that meet their unique needs.</p>
+
+      <div class="expertise-why">
+        <div class="expertise">
+          <h2>Our Expertise</h2>
+
+          <h3>Web Development & Frontend Development</h3>
+          <p>With years of experience in web development, we create responsive, user-friendly, and visually appealing
+            websites. Our expertise in frontend technologies ensures that your website not only looks great but also
+            provides an exceptional user experience.</p>
+
+          <h3>Data Analysis & Database Management</h3>
+          <p>We transform raw data into meaningful insights that drive informed decision-making. Our database management
+            services ensure your data is organized, secure, and accessible, allowing you to focus on growing your
+            business.</p>
+
+          <h3>Editing & Photography</h3>
+          <p>Our professional editing services refine your content to perfection, whether it's written material or
+            visual media. Our photography services capture moments and products with artistic precision, making your
+            visuals stand out.</p>
         </div>
-        <div class="home_right">
-          <p>Hi Everyone!</p>
-          <h2>We are mainly developers working for renowned MNCs</h2>
-          <h2>Started freelancing in the free time</h2>
-        </div>
-      </div>
-      <div id="about" class="about">
-        <h2>This is about page</h2>
-        <div class="about_left">
-          <h2>We mainly deal with:</h2>
+
+        <div class="why-choose-us">
+          <h2>Why Choose Us?</h2>
           <ul>
-            <li>Web Development</li>
-            <li>Photo & Video Editing</li>
-            <li>SEO Management</li>
-            <li>Data Analysis</li>
+            <li><strong>Client-Centered Approach:</strong> We listen to your needs and tailor our services to meet your
+              specific requirements.</li>
+            <li><strong>Quality and Efficiency:</strong> We are committed to delivering high-quality work within the
+              agreed timelines.</li>
+            <li><strong>Versatility:</strong> Our wide range of skills allows us to handle diverse projects, providing
+              you with a one-stop solution for various freelancing needs.</li>
+            <li><strong>Passion and Creativity:</strong> We love what we do, and it shows in our work. Our creative
+              solutions are designed to make a lasting impact.</li>
           </ul>
         </div>
-        <div class="about_right"></div>
-      </div>
-      <div class="services" id="services">
-        <h1 class="heading">Our Services</h1>
-        <div class="card-container">
-          <div class="card">
-            <div class="icon">🌐</div>
-            <h3>Web Development</h3>
-            <p>We provide high-quality web development services to bring your ideas to life.</p>
-          </div>
-          <div class="card">
-            <div class="icon">🎨</div>
-            <h3>Graphics Editing</h3>
-            <p>Our graphics editing services ensure your visuals are stunning and professional.</p>
-          </div>
-          <div class="card">
-            <div class="icon">🎥</div>
-            <h3>Videography</h3>
-            <p>Capture your moments perfectly with our professional videography services.</p>
-          </div>
-          <div class="card">
-            <div class="icon">🔍</div>
-            <h3>SEO</h3>
-            <p>Boost your online presence with our expert SEO services.</p>
-          </div>
-          <div class="card">
-            <div class="icon">📊</div>
-            <h3>Data Analysis</h3>
-            <p>Make informed decisions with our comprehensive data analysis services.</p>
-          </div>
-        </div>
-      </div>
+      </div> -->
 
-      <div id="contact" class="contact">
-        <div class="our_details">
-          <h2>Connect with us &rarr;</h2>
-          <p><strong>Phone:</strong> +91 1234567890</p>
-          <p><strong>Email:</strong> byteflick@gmail.com</p>
-          <p><strong>Address:</strong> Kolkata, West Bengal</p>
+      <!-- <h2>Meet the Team</h2> -->
+      <div class="team-cards">
+        <div class="team-member">
+          <img src="/Images/Sayantan.png" alt="Rounak">
+          <h3>Rounak Jana – Web Developer & Frontend Specialist</h3>
+          <p>With a strong background in both web and frontend development, [Your Name] brings technical expertise and
+            creativity to every project.</p>
         </div>
-        <div class="contact_form">
-          <h2>Contact Us here!</h2>
-          <form action="/submit_form" method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-            <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail" required>
-            <label for="msg">Message</label>
-            <input type="text" name="msg" id="msg" required>
-            <button type="submit">Submit</button>
-          </form>
+
+        <div class="team-member">
+          <img src="/Images/Sayantan.png" alt="Tias">
+          <h3>Tias Mondal – Data Analyst, Database Manager & Backend Developer</h3>
+          <p>Specializing in data analysis and database management, [Your Name] helps clients turn data into actionable
+            insights and maintain robust data systems.</p>
+        </div>
+
+        <div class="team-member">
+          <img src="/Images/Sayantan.png" alt="Sayantan">
+          <h3>Sayantan Mondal – Editor, Photographer & Content Writer</h3>
+          <p>Combining a keen eye for detail with a passion for visual storytelling, [Your Name] ensures your content is
+            polished and your visuals are captivating.</p>
         </div>
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <p>Follow us on:</p>
-        <ul class="social-links">
-          <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
-        </ul>
+    <section id="services" class="services">
+      <h1 class="heading">Our Services</h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>
+            We provide high-quality web development services to bring your
+            ideas to life.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h3>Graphics Editing</h3>
+          <p>
+            Our graphics editing services ensure your visuals are stunning and
+            professional.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">🎥</div>
+          <h3>Videography</h3>
+          <p>
+            Capture your moments perfectly with our professional videography
+            services.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">🔍</div>
+          <h3>SEO</h3>
+          <p>Boost your online presence with our expert SEO services.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>Data Analysis</h3>
+          <p>
+            Make informed decisions with our comprehensive data analysis
+            services.
+          </p>
+        </div>
       </div>
-    </footer>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
-      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-    <script src="server.js"></script>
-  </body>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <div class="our_details">
+        <h2>Connect with us &rarr;</h2>
+        <p><strong>Phone:</strong> +91 1234567890</p>
+        <p><strong>Email:</strong> byteflick@gmail.com</p>
+        <p><strong>Address:</strong> Kolkata, West Bengal</p>
+      </div>
+      <!-- <div class="contact_form">
+        <form action="/submit_form" method="post">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+          <label for="name">Phone Number</label>
+          <input type="tel" name="phone" id="phone" required />
+          <label for="mail">Email</label>
+          <input type="email" name="mail" id="mail" required />
+          <label for="msg">Message</label>
+          <textarea name="msg" id="msg" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div> -->
+
+      <div class="row input-container">
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <input type="text" required />
+            <label>Name</label> 
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input">
+            <input type="text" required />
+            <label>Email</label> 
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input" style="float:right;">
+            <input type="text" required />
+            <label>Phone Number</label> 
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <textarea required></textarea>
+            <label>Message</label>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="btn-lrg submit-btn">Send Message</div>
+        </div>
+    </div>
+
+    </section>
+  </div>
+
+  <!-- <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="/Images/6.png" alt="Logo" />
+        </div>
+        <p class="footer-description">
+          Connect with us on social media and stay updated with the latest
+          news and offers.
+        </p>
+      </div>
+      <div class="footer-right">
+        <ul class="social-links">
+          <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram fa-lg"></i></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+          <li><a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube fa-lg"></i></a></li>
+        </ul>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About Us</a>
+          <a href="#services" class="footer-link">Services</a>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <footer>
+    <div class="social-icons">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f "></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram "></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter "></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin-in "></i></a>
+    </div>
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#about">Our Team</a>
+        <a href="#services">Services</a>
+    </div>
+    <div class="footer-bottom">
+      <p>ByteFlick &#169; 2024 . All rights reserved.</p>
+    </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+</body>
 </html>
