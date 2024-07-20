@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 300px;
+    padding: 25px 250px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -348,8 +348,13 @@ footer {
     min-width: 250px;
 }
 
+.contact-info{
+    padding: 60px 0;
+}
+
 .contact-info p {
     margin: 5px 0;
+    font-size: larger;
 }
 
 .contact-form-heading {
