@@ -1,44 +1,36 @@
-// Example: Alert when a social media icon is clicked
-document.querySelectorAll('.social-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        alert('You are leaving the website!');
-    });
-});
-
-document.getElementById('contactForm').addEventListener('submit', function (event) {
+document.getElementById('contactForm').addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
-    const email = document.getElementById('mail').value; // Ensure the id matches the HTML
-    const message = document.getElementById('msg').value; // Ensure the id matches the HTML
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
 
-    // Prepare the data to be sent
-    const formData = {
-        name: name,
-        email: email,
-        message: message
-    };
+    if (!name || !email || !phone || !message) {
+        alert('Please fill in all fields.');
+        return;
+    }
 
-    // Send the data to the server using fetch
-    fetch('http://localhost:3000/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-    })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-            alert('Your message has been sent successfully!');
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-            alert('There was an error sending your message.');
+    try {
+        const response = await fetch('/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, message }),
         });
 
-    // Reset form
-    document.getElementById('contactForm').reset();
+        if (response.ok) {
+            alert('Message sent successfully!');
+            // Clear form fields
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('message').value = '';
+        } else {
+            alert('Oops! Something went wrong. Please try again later.');
+        }
+    } catch (error) {
+        console.error('Error sending message:', error);
+    }
 });
-
-document.documentElement.style.setProperty('--app-color', '#3498db'); // Change this color to your app's default color

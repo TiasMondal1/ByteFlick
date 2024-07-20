@@ -101,70 +101,112 @@
         </div>
       </div>
     </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <div class="our_details">
-        <h2>Connect with us &rarr;</h2>
-        <p><strong>Phone:</strong> +91 1234567890</p>
-        <p><strong>Email:</strong> byteflick@gmail.com</p>
-        <p><strong>Address:</strong> Kolkata, West Bengal</p>
-      </div>
-      <div class="row input-container">
-        <div class="col-xs-12">
-          <div class="styled-input wide">
-            <input type="text" required />
-            <label>Name</label>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="styled-input">
-            <input type="text" required />
-            <label>Email</label>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="styled-input" style="float:right;">
-            <input type="text" required />
-            <label>Phone Number</label>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="styled-input wide">
-            <textarea required></textarea>
-            <label>Message</label>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="btn-lrg submit-btn">Send Message</div>
-        </div>
-      </div>
-    </section>
   </div>
 
-  <footer>
-    <div class="social-icons">
-      <a href="#" class="facebook"><i class="fab fa-facebook-f "></i></a>
-      <a href="#" class="instagram"><i class="fab fa-instagram "></i></a>
-      <a href="#" class="twitter"><i class="fab fa-twitter "></i></a>
-      <a href="#" class="linkedin"><i class="fab fa-linkedin-in "></i></a>
+  <!-- <footer>
+    <div class="footer-top">
+
+      <div class="company-details">
+        <h2>Contact Us</h2>
+        <address>
+          251 Baghajatin Place<br>
+          Kolkata, West Bengal<br>
+          Email: byteflick@gmail.com<br>
+          Phone: +1 (123) 456-7890
+        </address>
+        <div class="social-icons">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="contactForm">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+          <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>  
+
     </div>
-    <div class="footer-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#about">Our Team</a>
-      <a href="#services">Services</a>
-    </div>
+
     <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#about">Our Team</a>
+        <a href="#services">Services</a>
+      </div>
       <p>ByteFlick &#169; 2024 . All rights reserved.</p>
     </div>
-  </footer>
+  </footer> -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
-    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>We are a company that values excellence and innovation.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin-in"></a>
+            </div>
+        </div>
+        <div class="footer-section contact-container">
+            <div class="contact-info">
+                <h4>Our Contact</h4>
+                <p><strong>Location:</strong> 1234 Street Name, City, State, 56789</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> byteflick@gmail.com</p>
+            </div>
+            
+            <div class="contact-form">
+                <h4 class="contact-form-heading">Contact Us</h4>
+                <form id="contact-form" action="/send" method="POST">
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                  <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                  <button type="submit">Send</button>
+              </form>              
+              <p id="form-response"></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ByteFlick. All rights reserved.</p>
+    </div>
+</footer>
+
   <script src="script.js"></script>
-  <script src="server.js"></script>
+  <script src="index.js"></script>
+
 </body>
 
 </html>
